@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rádio Sem Jesus Não Dá</title>
-    <link rel="stylesheet" href="RSJND/estilo01.css">
+    <link rel="stylesheet" href="estilo01.css">
 </head>
 <body>
     <header>
         <nav>
             <a href="home.html">Início</a>
-            <a href="programacao.html">Programação</a>
             <a href="sobre.html">Sobre Nós</a>
         </nav>
       <div class="header-content">
@@ -20,13 +19,12 @@
           <a href="#player" class="btn-ouvir">🎧 Ouvir Agora</a>
         </div>
         <div class="logo">
-        <img src="imagens/logo.png" alt="" srcset="">
+        <img src="imagens/logo.png" alt="" srcset="" height="120" width="120">
         </div>
       </div>
     </header>
 
     <main>
-      {% block content %}
       <section class="player" id="player">
         <audio controls autoplay>
              <source src="http://streaming-da-sua-radio:8000/stream" type="audio/mpeg" />
@@ -34,7 +32,12 @@
         </audio>
 </section>
     </main>
-
+    <h2>Programação da Rádio e Cultos</h2>
+  <ul>
+    <li>Domingo 09h/18h30: Culto da Família</li>
+    <li>Quarta 19h30: Campanha: Na Fé de Neemias </li>
+    <li>Sexta 19h: Sexta Feira do Clamor</li>
+  </ul>
     <footer>
       <p>Assembléia de Deus Sem Jesus Não Dá</p>
       <p>Pastor Presidente: Marivaldo</p>
