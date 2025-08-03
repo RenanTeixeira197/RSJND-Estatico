@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Radio Sem Jesus Não Dá</title>
+  <link rel="icon" href="./imagens/logo.png" type="image/png">
   <link rel="stylesheet" href="estilo02.css">
 </head>
 <body>
   <h2>Sobre Nós</h2>
      <header>
         <nav>
-            <a href="home.html">Início</a>
-            <a href="programacao.html">Programação</a>
+            <a href="index.html">Voltar para o Início</a>
         </nav>
     </header>
   <div class="logo">
@@ -20,15 +20,36 @@
   <p>A Rádio Sem Jesus Não Dá é uma emissora desenvolvida pela equipe de TI da Assembléia de Deus Sem Jesus Não Dá dedicada a levar a palavra de Deus e edificar vidas por meio da música e da mensagem cristã.</p>
   <h2>Missão:</h2>
   <p>Nossa missão é impactar corações e fortalecer a fé da nossa comunidade.</p>
+  <section>
+    <h2>Campanhas e Eventos</h2>
+  </section>
+
+  <section class="flyer" id="flyer" onload="fade()">
+    <img id="flyer-img" src="imagens/breve.jpg" alt="Flyer da Rádio Sem Jesus Não Dá" width="340" height="520" />
+    <div class="botoes-flyer">
+      <button onclick="voltarFlyer()">⏮️ Flyer Anterior</button>
+      <button onclick="trocarFlyer()">⏭️ Próximo Flyer</button>
+    </div>
+  </section>
+
+  <section class="player" id="player">
+    <audio controls autoplay>
+      <source src="http://streaming-da-sua-radio:8000/stream" type="audio/mpeg" />
+      Seu navegador não suporta o player de áudio.
+    </audio>
+  </section>
+  <script src="script/scripts.js"></script>
   <h2>Equipe</h2>
   <ul>
     <li>Pastor Presidente: Marivaldo</li>
     <li>Pastor Local: Maciel Casemiro</li>
-    <li>Desenvolvedor: Renan Teixeira</li>
-    <li>Locutores</li>
-    <li>Equipe técnica</li>
-    <li>Renan Teixeira</li>
   </ul>
+    <footer>
+      <p>Assembléia de Deus Sem Jesus Não Dá</p>
+      <p>Pastor Presidente: Marivaldo</p>
+      <p>Contato: (00) 1234-5678</p>
+      <p>Desenvolvido por: Renan Teixeira</p>
+    </footer>
   
 </body>
 </html>

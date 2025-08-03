@@ -51,3 +51,86 @@ ul{
     text-align: center;
     background-color: #003366;
 }
+
+.btn-ouvir {
+  display: inline-block;
+  margin-top: 10px;
+  background: #00ccff;
+  color: #003366;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-ouvir:hover {
+  background: #0099cc;
+}
+
+.header-content .logo {
+  max-width: 120px;
+  margin-top: 15px;
+}
+
+/* MAIN */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.mensagem {
+  background: #003366;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.flyer {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.flyer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.botoes-flyer button {
+  margin: 10px;
+  padding: 8px 16px;
+  border: none;
+  background: #00ccff;
+  color: #003366;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.botoes-flyer button:hover {
+  background: #0099cc;
+}
+
+/* PLAYER */
+.player {
+  text-align: center;
+  margin: 40px 0;
+}
+
+audio {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* FOOTER */
+footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9em;
+}
