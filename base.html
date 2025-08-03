@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rádio Sem Jesus Não Dá</title>
+    <link rel="stylesheet" href="RSJND/estilo01.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Início</a>
+            <a href="programacao.html">Programação</a>
+            <a href="sobre.html">Sobre Nós</a>
+        </nav>
+      <div class="header-content">
+        <div class="texto">
+          <h1>Rádio Sem Jesus não dá</h1>
+          <p>Levando a palavra e edificando vidas!</p>
+          <a href="#player" class="btn-ouvir">🎧 Ouvir Agora</a>
+        </div>
+        <div class="logo">
+        <img src="imagens/logo.png" alt="" srcset="">
+        </div>
+      </div>
+    </header>
+
+    <main>
+      {% block content %}
+      <section class="player" id="player">
+        <audio controls autoplay>
+             <source src="http://streaming-da-sua-radio:8000/stream" type="audio/mpeg" />
+             Seu navegador não suporta o player de áudio.
+        </audio>
+</section>
+    </main>
+
+    <footer>
+      <p>Assembléia de Deus Sem Jesus Não Dá</p>
+      <p>Pastor Presidente: Marivaldo</p>
+      <p>Contato: (00) 1234-5678</p>
+      <p>Desenvolvido por: Renan Teixeira</p>
+    </footer>
+</body>
+</html>

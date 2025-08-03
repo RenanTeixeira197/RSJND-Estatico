@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   <section class="mensagem">
+    <p><strong>Mensagem do Dia:</strong><br> "O Senhor é o meu pastor; nada me faltará." (Salmo 23:1)</p>
+  </section>
+
+  <section>
+    <h2>Campanhas e Eventos</h2>
+  </section>
+
+  <section class="flyer" id="flyer" onload="fade()">
+    <img id="flyer-img" src="{% static 'imagens/breve.jpg' %}" alt="Flyer da Rádio Sem Jesus Não Dá" width="340" height="520" />
+    <div class="botoes-flyer">
+      <button onclick="voltarFlyer()">⏮️ Flyer Anterior</button>
+      <button onclick="trocarFlyer()">⏭️ Próximo Flyer</button>
+    </div>
+  </section>
+
+  <section class="player" id="player">
+    <audio controls autoplay>
+      <source src="http://streaming-da-sua-radio:8000/stream" type="audio/mpeg" />
+      Seu navegador não suporta o player de áudio.
+    </audio>
+  </section>
+  <script src="script/scripts.js"></script>
+</body>
+</html>
+
